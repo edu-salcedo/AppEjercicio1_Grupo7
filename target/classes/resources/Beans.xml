@@ -5,34 +5,10 @@
        xsi:schemaLocation ="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
        
-            
-<!--       <bean id="prov1" class="entidad.Provincia" >               -->
-<!--          <property name ="nombre" value="mendoza"></property> -->
-<!--        </bean> -->
-      
-<!--        <bean id="prov2" class="entidad.Provincia" > -->
-              
-<!--          <property name ="nombre" value="catamarca"></property> -->
-<!--        </bean> -->
-       
-       
-<!--        como se haria una referencia compuesta -->
-
-<!--       <bean id="pais1" class="entidad.Pais" >           -->
-<!--          <property name ="nombre" value="Argentina"></property> -->
-<!--          <property name ="listaprov"> -->
-<!--                    <list> -->
-<!--                       <ref bean="prov1"/>                       -->
-<!--                       <ref bean="prov2"/> -->
-<!--                  </list> -->
-<!--           </property>  -->
-           
-<!--        </bean> -->
        
        <bean id="pepe" class="entidad.Usuario" scope="singleton" init-method="init" destroy-method="destroy">
        
           <property name ="usuario" value="juan"></property>         
           <property name ="contrasenia" value="123jbnkm"></property>
-<!--          <property name ="pais" ref="pais1"></property>    referencia  a la clase pais1 -->
        </bean>
 </beans>
