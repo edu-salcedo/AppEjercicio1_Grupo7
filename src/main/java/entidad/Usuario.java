@@ -24,8 +24,6 @@ public class Usuario implements Serializable{
 	@Column(name="pass")
 	private String contrasenia;
 	
-	
-	//Constructor vacio
 	public Usuario()
 	{
 		
@@ -53,7 +51,6 @@ public class Usuario implements Serializable{
 		return "usuario=" + usuario + ", contrasenia=" + contrasenia + "]";
 	}
 	
-	
 	public void init() {
 		
 		System.out.println("se inicia bean");
@@ -64,8 +61,4 @@ public class Usuario implements Serializable{
 		System.out.println("se destruye bean");
 		
 	}
-
-
-
-
 }
