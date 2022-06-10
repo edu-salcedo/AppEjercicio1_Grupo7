@@ -16,7 +16,7 @@ public class Main {
 		appContext= new ClassPathXmlApplicationContext("resources/Beans.xml");
           
 	    Usuario usuario=(Usuario)appContext.getBean("pepe");
-	    UsuarioNegocio usuarioNegocio = new UsuarioNegocio();
+	    UsuarioNegocio usuarioNegocio = (UsuarioNegocio)appContext.getBean("UsuarioNegocioBean");
 	    usuarioNegocio.agregarUsuario(usuario);
 	    boolean estado= usuarioNegocio.agregarUsuario(usuario);
 	    

@@ -9,5 +9,14 @@
           <property name ="usuario" value="juan"></property>         
           <property name ="contrasenia" value="123jbnkm"></property>
        </bean>
+        
+       <bean id="UsuarioNegocioBean" class="negocio.UsuarioNegocio" scope="singleton">
+       
+       </bean>
+       
+       <bean id="UsuarioDaoBean" class="dao.UsuarioDao" >
+        	
+       </bean>
+       
        
 </beans>
